@@ -1,0 +1,1048 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: azure;
+}
+.continer{
+    width: 80%;
+    margin: auto;
+}
+.nav{
+    width: 100%;
+    height: 70px;
+    background-color: #003554;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+}
+.nav .logo{
+    width: 80px;
+    height: 70px;
+    margin-left: 100px;
+}
+.nav ul{
+float: right;
+margin-right: 80px;
+padding: 18 12;
+}
+.nav ul li{
+display: inline;
+margin-left:25px; 
+position: relative;
+}
+.nav ul li a::after{
+    content: '';
+    width: 0px;
+    height: 3px;
+    border-radius: 20px;
+    background-color: #fca311;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 25px;
+    transition: 1s;
+}
+.nav ul li a:hover::after{
+    width: 100%;
+    height: 3px;
+}
+.nav ul li a{
+    color: #e5e5e5;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+.hero_image{
+    margin-top: 65px;
+    width: 100%;
+    height: calc(100vh - 65px);
+    background-image: url(../images/phones-social.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.text{
+    width: 70%;
+    text-align: center;
+    padding: 20 20;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 8px;
+    background-color:#00355438 ;
+    color: black;
+}
+.text h1{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+font-weight: bold;
+font-size: 70px;  
+color: black; 
+}
+.text .btn1{
+    display: block;
+    background-color:#e5e5e5;
+    color: black;
+    padding: 12;
+    margin-left:300px;
+    margin-top: 10;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 12px;
+    transition: .5s;
+    float: left;
+    cursor: pointer;
+}
+.text .btn2{
+    display: block;
+    background-color:#e5e5e5;
+    color: black;
+    padding: 12;
+    margin-right:300px;
+    margin-top: 10;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 12px;
+    transition: .5s;
+    float: right;
+    cursor: pointer;
+}
+.text .btn1:hover,
+.text .btn2:hover{
+    background-color: #073b4c;
+    color: whitesmoke;
+    border: 2px solid #0595c5;
+    transform: translate(-3px,-3px);
+}
+.about{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 100%;
+} 
+.about h2,
+.glary-a h2,
+.services h2,
+.pricing h2,
+.team h2,
+.news h2{
+    font-size: 52px;
+    text-align: center;
+    margin-top: 80px;
+}
+.div1{
+    width: 250px;
+    height: 8px;
+    margin: 40px auto;
+    background-color: #003554;
+    border-radius: 0px 0px 8px 8px;
+}
+.about-box{
+    width: 30%;
+    height: 300px;
+    background-color: none;
+    border: 1px solid black;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    padding: 18 6;
+    text-align: center;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+.about-box i,
+.about-box-2 i{
+    font-size: 52px;
+    font-weight: bold;
+    color:#003554;
+    transition: .5s;
+}
+.btn-box-about,
+.about-box-2 .btn-box-about{
+    background-color: #003554 ;
+    color: white;
+    width: 100px;
+    padding: 8 8;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .5s;
+}
+.about-box .btn-box-about:hover,
+.about-box-2 .btn-box-about:hover{
+    color:#14213d;
+    transform: translate(1px,3px);
+    transition: .5s;
+    font-weight: bold;
+    font-size: 15px;
+}
+.about-box-2{
+    width: 30%;
+    height: 300px;
+    background-color: none;
+    border: 1px solid black;
+    margin:40px 5% 80px 5%;
+    padding: 18 6;
+    text-align: center;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+.about-box-h{
+    color:#003554;
+    font-size:x-large;
+    transition: .5s;
+}
+.about .about-box::before,
+.about .about-box-2::before{
+    content: '';
+    width: 0%;
+    height: 0%;
+    background-color: #14213d;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transition: .8s;
+}
+.about-box:hover::before,
+.about-box-2:hover::before{
+    width: 100%;
+    height: 100%;
+}
+.about-box-2:hover h3,
+.about-box:hover h3{
+    transition: .5s;
+}
+.about-box-2:hover h3,
+.about-box:hover h3{
+    color: #fca311;
+}
+.about-box:hover .about-box-h,
+.about-box-2:hover .about-box-h{
+color: #fca311;
+}
+.about-box:hover .btn-box-about,
+.about-box-2:hover .btn-box-about{
+    background-color: #fca311;
+}
+.about-box:hover i,
+.about-box-2:hover i{
+    color: #fca311;
+}
+.nav ul li a:hover{
+    color:#fca311 ;
+}
+.nav ul li a{
+    transition: .7s;
+}
+.glary-a,
+.why{
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+    padding-top:60px;
+    padding-bottom: 60px;
+    background-color: #e5e5e5;
+    overflow: auto;
+}
+.img-imag1{
+    width: 30%;
+    height: 300px;
+    background-image: url(../images/Xiaomi-Redmi-Note-13-8GB-256GB-Android-13-2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    float: left;
+    margin-bottom: 12px;
+    position: relative;
+}
+.overlay-glary-image h3{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: xx-large;
+    color: #fca311;
+}
+.overlay-glary-image p{
+    font-weight: bold;
+    color: white;
+}
+.overlay-glary-image i{
+    line-height: 40px;
+    font-size: 28px;
+    background-color: #fca311;
+    color: #14213d ;
+}
+.img-imag1 .overlay-glary-image,
+.img-imag2 .overlay-glary-image,
+.img-imag3 .overlay-glary-image,
+.img-imag4 .overlay-glary-image,
+.img-imag5 .overlay-glary-image,
+.img-imag6 .overlay-glary-image{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 30%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: .6s;
+    cursor: pointer;
+}
+.img-imag1:hover .overlay-glary-image,
+.img-imag2:hover .overlay-glary-image,
+.img-imag3:hover .overlay-glary-image,
+.img-imag4:hover .overlay-glary-image,
+.img-imag5:hover .overlay-glary-image,
+.img-imag6:hover .overlay-glary-image{ 
+    opacity: 1;
+}
+.img-imag1::before,
+.img-imag2::before,
+.img-imag3::before,
+.img-imag4::before,
+.img-imag5::before,
+.img-imag6::before{
+    content: '';
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    top: 0;
+    background-color:#14213db0;
+    border-radius: 30px;
+    transition: .5s;
+}
+.img-imag1:hover::before,
+.img-imag2:hover::before,
+.img-imag3:hover::before,
+.img-imag4:hover::before,
+.img-imag5:hover::before,
+.img-imag6:hover::before{
+    width: 100%;
+    height: 100%;
+}
+.img-imag2{
+    width: 30%;
+    height: 300px;
+    background-image: url(../images/s24\ ultra\ review.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 12px;
+    position: relative;
+}
+.img-imag3{
+    width: 30%;
+    height: 300px;
+    background-image: url(../images/iphone-card-40-iphone14-202209_FMT_WHH.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    float: right;
+    margin-bottom: 15px;
+    position: relative;
+}
+.img-imag4{
+    width: 30%;
+    height: 300px;
+    background-image: url(../images/apple-iphone-13-black-unlocked-mobile-phone.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    float: left;
+    margin-top: 12px;
+    position: relative;
+}
+.img-imag5{
+    width: 30%;
+    height: 300px;
+    background-image: url(../images/images.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 12px;
+    position: relative;
+}
+.img-imag6{
+    width: 30%;
+    height: 300px;
+    background-image: url(../images/images\ \(2\).jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    float: right;
+    margin-top: 12px;
+    position: relative;
+}
+.services-box-1{
+    width: 30%;
+    height: 200px;
+    margin-top: 40px;
+    border: 1px solid #14213d;
+    padding: 8 4;
+    float: left;
+    position: relative;
+    transition:.7s;
+    cursor:pointer;
+}
+.services-box-2{
+    width: 30%;
+    height: 200px;
+    margin-top: 40px;
+    border: 1px solid #14213d;
+    padding: 8 4;
+    float: left;
+    margin-left:5%;
+    margin-right: 5%;
+    margin-top: 40px;
+    position: relative;
+    transition:.7s;
+    cursor:pointer;
+}
+.services-box-3{
+    width: 30%;
+    height: 200px;
+    margin-top: 40px;
+    border: 1px solid #14213d;
+    padding: 8 4;
+    float: right;
+    margin-top: 40px;
+    position: relative;
+    transition:.7s;
+    cursor:pointer;
+}
+.services-box-4{
+    width: 30%;
+    height: 200px;
+    margin-top: 10px;
+    border: 1px solid #14213d;
+    transition:.7s;
+    padding: 8 4;
+    float: left;
+    position: relative;
+    cursor:pointer;
+}
+.services-box-5{
+    width: 30%;
+    height: 200px;
+    margin-top:10px;
+    border: 1px solid #14213d;
+    transition:.7s;
+    padding: 8 4;
+    float: left;
+    margin-left:5%;
+    margin-right: 5%;
+    margin-bottom: 80px;
+    position: relative;
+    cursor: pointer;
+}
+.services-box-6{
+    width: 30%;
+    height: 200px;
+    margin-top: 10px;
+    border: 1px solid #14213d;
+    transition:.7s;
+    padding: 8 4;
+    float: right;
+    margin-top: 8px;
+    position: relative;
+    cursor:pointer;
+}
+.title-s{
+    color: #fca311;
+    margin-left: 30px;
+    font-weight:bold;
+    font-size: x-large;
+}
+.services i{
+    font-size: 32px;
+    font-weight: bold;
+    color: #14213d;
+}
+.services-box-1::before,
+.services-box-2::before,
+.services-box-3::before,
+.services-box-4::before,
+.services-box-5::before,
+.services-box-6::before{
+    content: '';
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background-color: #fca311;
+    border-radius: 25px;
+    transition: .7s;
+}
+.services-box-1:hover::before,
+.services-box-2:hover::before,
+.services-box-3:hover::before,
+.services-box-4:hover::before,
+.services-box-5:hover::before,
+.services-box-6:hover::before{
+width: 100%;
+height: 100%;
+}
+.services-box-1:hover .title-s,
+.services-box-2:hover .title-s,
+.services-box-3:hover .title-s,
+.services-box-4:hover .title-s,
+.services-box-5:hover .title-s,
+.services-box-6:hover .title-s{
+    color: #14213d;
+}
+.services-box-1:hover,
+.services-box-2:hover,
+.services-box-3:hover{
+    transform: translate(10px,-10px);
+    border-radius: 25px;
+}
+.services-box-4:hover,
+.services-box-5:hover,
+.services-box-6:hover{
+    transform: translate(10px,10px);
+    border-radius: 25px;
+}
+.why .div2{
+    width: 90px;
+    height: 4px;
+    background-color: #14213d;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+.why .text-why{
+    float: left;
+    height: auto;
+    width: 500px;;
+}
+.why .image-why{
+    float: right;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+.why .image-why i{
+    font-size: x-small;
+    cursor: pointer;
+    margin: 10px 10px;
+}
+.why .image-why #i-w{
+    font-size: x-small;
+    cursor: pointer;
+    color: #14213d;
+    transition:.4s;
+}
+.why .image-why #i-w:hover{
+    color: #fca311;
+}
+.div-bg{
+    width: 100%;
+    height: 400px; 
+    background-image: url(../images/apple-iphone-11-2019.webp);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 60px;
+    position: relative;
+}
+.div-bg .div-1-icon{
+    width: 25%;
+    height: auto;
+    text-align: center;
+    float: left;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    transform: translate(0px,-25px);
+}
+.icon-1{
+    width: 100px;
+    height: 100px;
+    border: 2px solid #fca311;
+    text-align: center;
+    border-radius: 50px;
+    margin: auto;
+    padding-top: 50px;
+    cursor: pointer;
+    transition: 1.5s;
+}
+.icon-1:hover{
+    background-color: #14213d;
+    transform: translate(0px,-10px);
+    border-radius: 30%;
+}
+.div-bg .div-2-icon{
+    width: 25%;
+    height: auto;
+    text-align: center;
+    float: left;
+    position: absolute;
+    left: 25%;
+    top: 150px;
+    transform: translate(0px,-25px);
+}
+.div-bg .div-3-icon{
+    width: 25%;
+    height: auto;
+    text-align: center;
+    float: left;
+    position: absolute;
+    top:150px;
+    left: 50%;
+    transform: translate(0px,-25px);
+}
+.div-bg .div-4-icon{
+    width: 25%;
+    height:auto;
+    text-align: center;
+    float: right;
+    position: absolute;
+    top: 150px;
+    right: 0%;
+    transform: translate(0px,-25px);
+}
+.pricing{
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+.parent-pricing{
+    margin-top: 80px;
+}
+.parent-pricing .box-1-pricing{
+    width: 30%;
+    height: auto;
+    float: left;
+    text-align: center;
+    padding: 20px 20px;
+    margin-top: 0px;
+    border: 1px solid #14213d;
+    position: relative;
+    cursor: pointer;
+}
+
+.parent-pricing .div-box-1{
+    width: 150px;
+    height: 150px;
+    border: 2px solid #14213d;
+    border-radius: 75px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    padding: 40px;
+}
+.box-1-pricing button,
+.box-2-pricing button,
+.box-3-pricing button{
+    width: 100px;
+    padding: 5px 10px;
+    color: #fca311;
+    background-color: #e5e5e5;
+    border: 1px solid #14213d;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .6s;
+}
+.box-1-pricing p,
+.box-2-pricing p,
+.box-3-pricing p{
+    color: #14213d;
+}
+.box-1-pricing::before,
+.box-2-pricing::before,
+.box-3-pricing::before{
+    content: '';
+    width: 50%;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background-color: #e5e5e5a8;
+    transition: 1s;
+}
+.box-1-pricing:hover::before,
+.box-2-pricing:hover::before,
+.box-3-pricing:hover::before{
+    width: 50%;
+    height: 100%;
+}
+.box-1-pricing::after,
+.box-2-pricing::after,
+.box-3-pricing::after{
+    content: '';
+    width: 50%;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    bottom:0;
+    right:0;
+    background-color: #fca211a8;
+    transition: 1s;
+}
+.box-1-pricing:hover::after,
+.box-2-pricing:hover::after,
+.box-3-pricing:hover::after{
+    width: 50%;
+    height: 100%;
+}
+.parent-pricing .box-2-pricing{
+    width: 30%;
+    height: auto;
+    float: left;
+    text-align: center;
+    padding: 20px 20px;
+    margin-top: 0px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 80px;
+    border: 1px solid #14213d;
+    position: relative;
+    cursor: pointer;
+}
+.parent-pricing .box-3-pricing{
+    width: 30%;
+    height: auto;
+    float: right;
+    text-align: center;
+    padding: 20px 20px;
+    margin-top: 0px;
+    border: 1px solid #14213d;
+    position: relative;
+    cursor: pointer;
+}
+.box-1-pricing button:hover,
+.box-2-pricing button:hover,
+.box-3-pricing button:hover{
+    background-color: #fca311;
+    color: #14213d;
+}
+.div-hamza{
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/smart\ phones\ messaging\ each\ other\ BG.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow:auto;
+    position: relative;
+    text-align: center;
+}
+.div-hamza img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 150px;
+    left: 35%;
+}
+.div-hamza h1{
+    color:aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 42%;
+    left: 45%;
+}
+.div-hamza p{
+    color: #000000;
+    position: absolute;
+    top: 52%;
+    left: 45%;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.div-hamza span{
+    position: absolute;
+    top: 65%;
+    left: 37%;
+    color: #14213d;
+}
+.team{
+    width: 100%;
+    height: auto;
+    overflow: auto;
+}
+.box-1-team{
+    width: 30%;
+    height: auto;
+    background-color:#e5e5e5;
+    float: left;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+.box-1-team .image-team,
+.box-2-team .image-team,
+.box-3-team .image-team{
+    width: 90%;
+    height: 250px;
+    margin: auto;
+    position: relative;
+}
+.image-team img{
+    width: 100%;
+    height: 100%;
+}
+.image-team .overlay-image-team{
+    background-color: rgba(0, 0, 0, 0.466);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s;
+}
+.image-team .overlay-image-team i{
+    display:block;
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+    background-color: #14213d;
+    color: #fca311;
+    line-height: 60px;
+    margin-left: auto;
+    cursor: pointer;
+}
+.box-1-team h1,
+.box-2-team h1,
+.box-3-team h1{
+    color: #14213d;
+    transition: 1.8s;
+}
+.box-1-team p,
+.box-2-team p,
+.box-3-team p{
+    color: #fca311;
+    font-weight: bold;
+    transition: 1.8s;
+}
+.box-2-team{
+    width: 30%;
+    height: auto;
+    background-color:#e5e5e5;
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%; 
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+.box-3-team{
+    width: 30%;
+    height: auto;
+    background-color:#e5e5e5;
+    float: right;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+.box-1-team::before,
+.box-2-team::before, 
+.box-3-team::before{
+    content: '';
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color:#d68605ab;
+    transition: 1.5s;
+}
+.box-1-team:hover::before,
+.box-2-team:hover::before,
+.box-3-team:hover::before{
+    width: 100%;
+    height: 100%;
+}
+.box-1-team:hover .overlay-image-team,
+.box-2-team:hover .overlay-image-team,
+.box-3-team:hover .overlay-image-team{
+    opacity: 1;
+}
+.box-1-team:hover p,
+.box-2-team:hover p,
+.box-3-team:hover p{
+color: #000000;
+transform: translate(0px,-8px);
+}
+.box-1-team:hover h1,
+.box-2-team:hover h1,
+.box-3-team:hover h1{
+color: #000000;
+transform: translate(0px,8px);
+}
+.news{
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+    overflow: auto;
+}
+.news .box-1-news{
+    width: 30%;
+    height: calc(100vh - 100px);
+    float: left;
+    padding:25px 0px 15px 0px;
+    text-align: center;
+}
+.news .box-2-news{
+    width: 30%;
+    height: calc(100vh - 100px);
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding:25px 0px 20px 0px;
+    text-align: center;
+}
+.news .box-3-news{
+    width: 30%;
+    height: calc(100vh - 100px);
+    float: right;
+    padding:25px 0px 20px 0px;
+    text-align: center;
+}
+.news .box-1-news,
+.news .box-2-news,
+.news .box-3-news{
+    position: relative;
+}
+.news .box-1-news img,
+.news .box-2-news img,
+.news .box-3-news img{
+    width: 80%;
+    height: 250px;
+}
+.news .box-1-news p,
+.news .box-2-news p,
+.news .box-3-news p{
+    font-size: 12px;
+    word-spacing: 4px;
+}
+.news .box-1-news span,
+.news .box-2-news span,
+.news .box-3-news span{
+    color: #14213d;
+}
+.news .box-1-news button,
+.news .box-2-news button,
+.news .box-3-news button{
+    background-color:#14213d;
+    color:#fca311;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .7s;
+}
+.news .box-1-news i,
+.news .box-2-news i,
+.news .box-3-news i{
+    color: #14213d;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 12px;
+}
+.news .box-1-news::before,
+.news .box-2-news::before,
+.news .box-3-news::before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 0%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    transition: 1.2s;
+    background-color: #14213d7a;
+}
+.news .box-1-news::after,
+.news .box-2-news::after,
+.news .box-3-news::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 0%;
+    height: 0%;
+    bottom: 0;
+    right: 0;
+    transition: 1.2s;
+    background-color: #fca2117a;
+}
+.news .box-1-news:hover::before,
+.news .box-2-news:hover::before,
+.news .box-3-news:hover::before{
+    width: 100%;
+    height: 50%;
+}
+.news .box-1-news:hover::after,
+.news .box-2-news:hover::after,
+.news .box-3-news:hover::after{
+    width: 100%;
+    height: 50%;
+}
+.news .box-1-news button:hover,
+.news .box-2-news button:hover,
+.news .box-3-news button:hover{
+    background-color: #fca311;
+    color: #14213d;
+    font-weight: bold;
+}
+.footer{
+    width: 100%;
+    height: 55vh;
+    background-color:#003554;
+    margin-top: 80px;
+    text-align: center;
+    padding-top: 40px;
+}
+.footer img{
+    border-radius: 8px;
+}
+.footer i{
+    font-size: 35px;
+    margin-top: 10px;
+    margin-left: 18px;
+    color: #e5e5e5;
+    cursor: pointer;
+    transition: .5s;
+}
+.footer p{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e5e5e5;
+}
+.footer i:hover{
+    transform: translate(0px,-4px);
+    color: #fca311;
+}
+
